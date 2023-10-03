@@ -1,6 +1,7 @@
 #!/bin/bash
 
 gcloud run deploy rqlite \
+  --allow-unauthenticated \
   --min-instances=0 \
   --max-instances=1 \
   --source . \
