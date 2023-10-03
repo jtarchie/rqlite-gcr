@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "type": "s3",
+  "timeout": "60s",
+  "continue_on_failure": true,
+  "sub": {
+    "access_key_id": "$S3_ACCESS_KEY_ID",
+    "secret_access_key": "$S3_SECRET_ACCESS_KEY_ID",
+    "endpoint": "$S3_ENDPOINT",
+    "region": "$S3_BUCKET_REGION",
+    "bucket": "$S3_BUCKET_NAME",
+    "path": "backups/$DATABASE_NAME.sqlite3.gz"
+  }
+}
